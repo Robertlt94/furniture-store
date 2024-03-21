@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Decor</title>
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Store logo">
+        </div>
+        <h1>Home Decor</h1>
+    </header>
+    <main>
+        <div class="task">
+            <h2>Monthly Sales Report</h2>
+            <!-- first div is for total monthly sales -->
+            <div id="sales-report-result">
+            </div>
+            <!-- second div is for a breakdown of sales -->
+            <div id="sales-breakdown-results">
+
+            </div>
+        </div>
+        <div class="task">
+            <h2>Add New Furniture Item</h2>
+            <label for="furniture-name-input">Furniture Name:</label>
+            <input type="text" id="furniture-name-input">
+            <label for="furniture-category-select">Room Category:</label>
+            <select name="furniture-category-select" id="furniture-category-select">
+                <option value="Bedroom">Bedroom</option>
+                <option value="Den">Den</option>
+                <option value="Bathroom">Bathroom</option>
+            </select>
+            <label for="furniture-price-input">Price: </label>
+            <input type="number" id="furniture-price-input">
+            <button id="add-furniture-btn">Add Furniture</button>
+        </div>
+        <div class="task">
+            <h2>Current Furniture Catalogue:</h2>
+            <!-- All items in the current catalog are listed here -->
+            <div id="furniture-catalogue-results">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
